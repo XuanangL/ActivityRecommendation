@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal"
+            >
+
+            <!-- Heading -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activities Preferences"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Subheading -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For better recommendation please select all the activities that you would prefer"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Rest of your layout elements here -->
+
+        </LinearLayout>
+
+        <!-- First Line with 2 preferences -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+            <!-- Football Preference -->
+            <LinearLayout
+                android:id="@+id/footballOption"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:tag="sportOption"
+                android:background="@drawable/preference_selector"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="8dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/football"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Football"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <!-- Meditation Preference -->
+            <LinearLayout
+                android:id="@+id/meditationOption"
+                android:layout_width="0dp"
+                android:tag="sportOption"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="8dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/meditation"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Meditation"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Second Line with 3 preferences -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            >
+
+            <!-- Netball Preference -->
+            <!-- ... -->
+            <LinearLayout
+                android:id="@+id/netballOption"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:tag="sportOption"
+                android:layout_weight="1"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="5dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/basketball"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Netball"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Meditation Preference -->
+            <LinearLayout
+                android:id="@+id/hikingOption"
+                android:layout_width="0dp"
+                android:tag="sportOption"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="8dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/hiking"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Hiking"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yogaOption"
+                android:layout_width="0dp"
+                android:tag="sportOption"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="8dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/yoga"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Yoga"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Relax Preference -->
+            <!-- ... -->
+
+            <!-- Yoga Preference -->
+            <!-- ... -->
+        </LinearLayout>
+
+        <!-- Repeat similar blocks for other lines... -->
+        <!-- First Line with 2 preferences -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+            <!-- Football Preference -->
+            <LinearLayout
+                android:id="@+id/swimmingOption"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:tag="sportOption"
+                android:layout_weight="1"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="8dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/swimming"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Swimming"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <!-- Meditation Preference -->
+            <LinearLayout
+                android:id="@+id/joggingOption"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:tag="sportOption"
+                android:layout_weight="1"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="8dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/jogging"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Jogging"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Second Line with 3 preferences -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            >
+
+            <!-- Netball Preference -->
+            <!-- ... -->
+            <LinearLayout
+                android:id="@+id/skiingOption"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:tag="sportOption"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="5dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/skiing"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Skiing"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Meditation Preference -->
+            <LinearLayout
+                android:id="@+id/golfOption"
+                android:layout_width="0dp"
+                android:tag="sportOption"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="8dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/golf"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Golf"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cricketOption"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:tag="sportOption"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="8dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/cricket"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Cricket"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Relax Preference -->
+            <!-- ... -->
+
+            <!-- Yoga Preference -->
+            <!-- ... -->
+        </LinearLayout>
+        <!-- First Line with 2 preferences -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+            <!-- Football Preference -->
+            <LinearLayout
+                android:id="@+id/tabletennisOption"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:tag="sportOption"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="8dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/tabletennis"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Table Tennis"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/citywalkOption"
+                android:layout_width="0dp"
+                android:tag="sportOption"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="8dp"
+
+                >
+
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/citywalk"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="City Walk"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Second Line with 3 preferences -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            >
+
+            <!-- Netball Preference -->
+            <!-- ... -->
+            <LinearLayout
+                android:id="@+id/badmintonOption"
+                android:layout_width="12dp"
+                android:layout_height="50dp"
+                android:tag="sportOption"
+                android:layout_weight="1"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="5dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="7dp"
+                    android:src="@drawable/badminton"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Badminton"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Meditation Preference -->
+            <LinearLayout
+                android:id="@+id/gymOption"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:tag="sportOption"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="8dp"
+
+                >
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/gym"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Gym"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cyclingOption"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:tag="sportOption"
+                android:layout_weight="1"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="8dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/cycling"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Cycling"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Relax Preference -->
+            <!-- ... -->
+
+            <!-- Yoga Preference -->
+            <!-- ... -->
+        </LinearLayout>
+        <!-- First Line with 2 preferences -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+            <!-- Football Preference -->
+            <LinearLayout
+                android:id="@+id/dancingOption"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:tag="sportOption"
+                android:layout_weight="1"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="8dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/dancing"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Dancing"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <!-- Meditation Preference -->
+            <LinearLayout
+                android:id="@+id/tennisOption"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:tag="sportOption"
+                android:layout_weight="1"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="8dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/tennis"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Tennis"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Second Line with 3 preferences -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginBottom="1dp">
+
+            <!-- Netball Preference -->
+            <!-- ... -->
+            <LinearLayout
+                android:id="@+id/basketballOption"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:tag="sportOption"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="5dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/basketball"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Basketball"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Meditation Preference -->
+            <LinearLayout
+                android:id="@+id/chessOption"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:tag="sportOption"
+                android:layout_weight="1"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="8dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/chess"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Chess"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/othersOption"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:tag="sportOption"
+                android:layout_weight="1"
+                android:background="@drawable/preference_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:layout_margin="8dp"
+
+                >
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/jogging"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Others"
+                    android:textColor="#007AFF"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+
+            <!-- Relax Preference -->
+            <!-- ... -->
+
+            <!-- Yoga Preference -->
+            <!-- ... -->
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="2dp"
+            android:text="Save and Continue"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="3dp"
+            />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
